@@ -8,7 +8,7 @@ test('handle inputbox',async({page}) =>{
    await expect(await page.locator("//input[@id='name']")).toBeEnabled();
    //await page.locator("//input[@id='name']").fill("Abhishek");
    await page.fill("//input[@id='name']",'krishna');
-   await page.waitForTimeout(5000);//pausing code
+    await page.waitForTimeout(5000);//pausing code
 
 }
 
