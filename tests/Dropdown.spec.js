@@ -24,7 +24,7 @@ await page.goto('https://testautomationpractice.blogspot.com/');
 //3) check presence of value in the dropdown - Approach1
 
 const content = await page.locator('#country').textContent();
-
+await page.screenshot({path:'tests/screenshots/'+Date.now()+'Homepage.png'})
 
 
 
